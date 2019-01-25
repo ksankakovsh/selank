@@ -1,0 +1,173 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.ttf");
+       
+}
+@font-face {
+  font-family: "Montserrat-bold";
+  src: url("../fonts/Montserrat-Bold.ttf");
+
+}
+.img-fluid {margin: 0 auto;}
+.block {padding: 100px 0;}
+.txt {font-weight: 700; font-size: 18px;}
+.bold {font-weight: 700;}
+.text_gradient { 
+  background: -webkit-linear-gradient(left, rgba(20,213,187,1) 0%, rgba(210,255,82,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;}
+/* == =======  1 блок с менюхой=========*/
+.block_green {background-image: url(../img/good-bg.png); padding: 30px 0;
+background-size: contain; background-repeat: no-repeat; min-height: 330px;
+-webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  }
+.block_green2 {
+	background-image: url(../img/bad-bg.png);
+background-size: contain; background-repeat: no-repeat; min-height: 330px;
+}
+.img {margin-top: 50px;}
+
+/* == =======  2 блок с Мясоедовым =========*/
+.note  {background-image: url(../img/1.png); background-repeat: no-repeat;padding-left: 91px;
+   background-size: contain;}
+.akademik {background: url(../img/myasoed.png) no-repeat center; min-height: 310px; background-size: contain;}
+.button { border-radius: 15px; color: #fff; padding: 5px 25px; position: relative; z-index: 20;
+background: linear-gradient(to right, rgba(255,175,75,1) 0%, rgba(254,90,75,1) 100%);}
+.button:hover {background: linear-gradient(to right, rgba(254,90,75,1) 0%, rgba(255,175,75,1) 100%);
+text-decoration: none; color: #FFD700;}
+
+/* == =======  3 где пацан на стрессе =========*/
+.bg-2 {background-image: url(../img/bg2.png); background-size: contain;} 
+
+
+/* == =======  4 Создан для тех, 
+кто хочет получать супер-результаты в жизни =========*/
+
+.product {background-image: url(../img/selac.png); min-height: 310px;
+	background-size: contain; background-repeat: no-repeat; margin-bottom: 45px;}
+.where {min-height: 300px;}
+
+
+/* == =======  5 естественная помощь при стрессе =========*/
+.bg-4 {background-image: url(../img/bg4.png);}
+.help {background-size: contain;
+  min-height: 457px; background: url(../img/video1.png) no-repeat center;
+}
+
+
+/* == =======  6 эффективность доказана клин.исследованиями =========*/
+.statistic {border-left: solid 5px #00FFFF;}
+.carousel-control-prev-icon {
+background-image: url(../img/arrow1.png);
+}
+.carousel-control-next-icon {
+background-image: url(../img/arrow.png);
+}
+.statistic {border-left: solid 5px #00FFFF;}
+
+/* == =======  7 схема приема =========*/
+.bg-5 {background: url(../img/bg5.png) no-repeat;}
+
+/* == =======  8 ближайшая аптека =========*/
+
+.apteki {margin-bottom: 20px;}
+.button_transp {
+  border-radius: 15px;
+    color: rgba(254,90,75,1);
+    padding: 5px 25px;
+    position: relative;
+    z-index: 20;
+    /* background: linear-gradient(to right, rgba(255,175,75,1) 0%, rgba(254,90,75,1) 100%); */
+    border-image: linear-gradient(to right, rgba(255,175,75,1) 0%, rgba(254,90,75,1) 100%);
+    border: solid 1px;
+}
+.button_transp:hover {
+  background: linear-gradient(to right, rgba(255,175,75,1) 0%, rgba(254,90,75,1) 100%);
+  color: #fff;
+}
+.button_transp:active {
+  background: rgba(254,90,75,1); color: #fff;
+}
+.links {  background: linear-gradient(to right, rgba(255,175,75,1) 0%, rgba(254,90,75,1) 100%);
+      font-size: 19px;
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent;}
+.links:hover {text-decoration: underline;background: linear-gradient(to right, rgba(254,90,75,1) 0%, rgba(255,175,75,1) 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+/* == =======  9 отзывы врачей =========*/
+.statistic {border-left: solid 5px #00FFFF;}
+.reviews {min-height: 310px; background: url(../img/aculov.png) no-repeat center;
+background-size: contain;}
+
+/* == =======  10 футер =========*/
+.statistic {border-left: solid 5px #00FFFF;}
+.transition {font-size: 13px; background: url(../img/link.png) no-repeat;
+padding-left: 23px;
+}
+.footer-menu {margin-bottom: 30px;}
+.brand {    font-size: 35px;
+    font-weight: 700;}
+.footer {background: url(../img/bg6.png) no-repeat;}
+
+
+ /* ====стили для шариков=====  */
+
+.paral {position: absolute;}
+.circle_1 {top: -14px; left: 47px;}
+.circle_2 {top: 186px; left: 13px;}
+.circle_3 {top: 267px; left: 47px;}
+.circle_4 {top: 66px; left: 20px;}
+.circle_5 {top: 279px; left: 220px;}
+.circle_6 {top: 300px; left: 249px;}
+.circle_7 {top: -40px; left: 18px;}
+.circle_8 {top: 38px; left: -13px;}
+.circle_9 {top: 110px; left: -17px;}
+.circle_10 {top: 91px; left: 277px;}
+.circle_11 {top: 276px; left: 54px;}
+.circle_12 {top: 262px; left: 84px;}
+.circle_13{top: 106px; left: 445px;}
+.circle_14{ left: 380px;}
+.circle_15{top: 358px; left: 270px;}
+.circle_16{ left: 590px;}
+.circle_17{top: 10px; left: 620px;}
+.circle_18{right: 428px;}
+.circle_19{top: 50px;right: 640px;}
+.circle_23{top: 389px;left: -117px;}
+.circle_20{top: -15px;right: -25px;}
+.circle_21{top: 90px;right: -97px;}
+.circle_22{top: 168px;left: -22px;}
+.circle_24{top: -79px;left: -55px;}
+.circle_25{top: 100px;right: -38px;}
+.circle_26{top: 321px;}
+.circle_27{top: -40px;left: 421px;}
+.circle_28{top: 100px;right: -88px;}
+.circle_29{top: 400px; left: 342px;}
+.circle_30{bottom: 183px;right: -21px;}
+.circle_31{top: 389px;right: 25px;}
+.circle_32{top: -15px;right: -25px;}
+.circle_33{top: 90px;right: -97px;}
+.circle_34{top: 168px;left: -22px;}
+.circle_35{top: -79px;left: -55px;}
+.circle_36{top: -62px;left: 726px;}
+.circle_37{top: 186px; right: 360px}
+.circle_38{top: 277px;left: 610px;}
+.circle_39{top: 90px;right: 376px;}
+.circle_40{top: 216px; right: 25px;}
+.circle_41{top: 400px; left: 342px;}
+
+/*===== MEDIA ===*/
+@media only screen and (max-width: 768px) {
+  .boroda {display: none;}
+}
+@media only screen and (max-width: 680px) {
+  .circle_13,.circle_16,.circle_17,.circle_27,.circle_28,.circle_33,
+  .circle_36,.circle_21,.circle_14,.circle_25,.circle_38{
+    display: none;
+  }
+}
