@@ -9,15 +9,15 @@
 
 }
 .img-fluid {margin: 0 auto;}
-.block {padding: 100px 0;}
-.txt {font-weight: 700; font-size: 18px;}
-.bold {font-weight: 700;}
+.block {padding: 70px 0;}
+.txt {font-weight: 700; font-size: 23px; line-height:1.667; }
+.bold {font-weight: 700; font-size: 14px; line-height: 2;}
 .text_gradient { 
   background: -webkit-linear-gradient(left, rgba(20,213,187,1) 0%, rgba(210,255,82,1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;}
 /* == =======  1 блок с менюхой=========*/
-.block_green {background-image: url(../img/good-bg.png); padding: 30px 0;
+.block_green {background-image: url(../img/good-bg.png); padding: 50px 0;
 background-size: contain; background-repeat: no-repeat; min-height: 330px;
 -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
@@ -29,7 +29,13 @@ background-size: contain; background-repeat: no-repeat; min-height: 330px;
 background-size: contain; background-repeat: no-repeat; min-height: 330px;
 }
 .img {margin-top: 50px;}
-
+.brand-white {font-size: 40px;}
+.ul-head {font-size: 14px; }
+.ul-head li {color: #00FFFF;
+  margin-bottom: 30px; margin-left: 60px; line-height: 2.1;
+}
+.ul-blue {color: rgb(71, 71, 71); }
+.textt {font-size: 13px; line-height: 2;}
 /* == =======  2 блок с Мясоедовым =========*/
 .note  {background-image: url(../img/1.png); background-repeat: no-repeat;padding-left: 91px;
    background-size: contain;}
@@ -69,10 +75,10 @@ background-image: url(../img/arrow.png);
 .statistic {border-left: solid 5px #00FFFF;}
 
 /* == =======  7 схема приема =========*/
-.bg-5 {background: url(../img/bg5.png) no-repeat;}
+
 
 /* == =======  8 ближайшая аптека =========*/
-
+.bg-5 {background: url(../img/bg5.png) no-repeat;}
 .apteki {margin-bottom: 20px;}
 .button_transp {
   border-radius: 15px;
@@ -92,7 +98,7 @@ background-image: url(../img/arrow.png);
   background: rgba(254,90,75,1); color: #fff;
 }
 .links {  background: linear-gradient(to right, rgba(255,175,75,1) 0%, rgba(254,90,75,1) 100%);
-      font-size: 19px;
+      font-size: 14px;
   -webkit-background-clip: text; 
   -webkit-text-fill-color: transparent;}
 .links:hover {text-decoration: underline;background: linear-gradient(to right, rgba(254,90,75,1) 0%, rgba(255,175,75,1) 100%);
