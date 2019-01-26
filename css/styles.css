@@ -33,6 +33,18 @@
 }
 .button:hover {background: linear-gradient(to right, rgba(254,90,75,1) 0%, rgba(255,175,75,1) 100%);
 text-decoration: none; color: #FFD700;}
+.carousel-indicators {
+  bottom: -40px;
+}
+
+.carousel-indicators li {min-height: 10px; background-repeat: no-repeat;
+background-image: url(../img/tochka.png); background-size: contain;
+}
+.carousel-indicators .active li {
+  min-height: 15px;
+}
+
+
 
 /* == =======  1 блок с менюхой=========*/
 .block_green {background-image: url(../img/header1.png); padding-bottom: 50px;
@@ -63,8 +75,8 @@ h1 {margin-top: 17px;}
    background-size: contain;}
 .but2 {position: absolute;    bottom: 121px;
     left: 260px;}
-.white {position: absolute;top: 40px;
-    left: 169px;
+.myasoed {position: absolute;top: 40px;
+    left: 155px;
     font-size: 10px;
     color: white;
     line-height: 18px;}
@@ -88,12 +100,12 @@ h1 {margin-top: 17px;}
 
 
 /* == =======  5 естественная помощь при стрессе =========*/
-.bg-4 {background-image: url(../img/bg4.png);}
+.bg-4 {background-image: url(../img/bg4.png); background-size: contain;}
 .but4 {position: absolute; top:125px; left: 120px;}
 
 
 /* == =======  6 эффективность доказана клин.исследованиями =========*/
-.statistic {border-left: solid 5px #00FFFF;}
+.statistic {border-left: solid 5px #00FFFF; max-height: 140px; margin-bottom: 38px;}
 .slider1 {margin-bottom: 56px;}
 .slider1 .carousel-control-next {
       position: absolute;
@@ -106,15 +118,14 @@ h1 {margin-top: 17px;}
     top: 292px;
 }
 
-
-.statistic {border-left: solid 5px #00FFFF;}
-
 /* == =======  7 схема приема =========*/
-
-
+.bg-4 {background-image: url(../img/bg4.png); background-size: contain;}
+.shema {max-width: 900px; margin: 0 auto;}
+.img-priem {max-width: 80px;}
 /* == =======  8 ближайшая аптека =========*/
 .bg-5 {background: url(../img/bg5.png) no-repeat;}
 .apteki {margin-bottom: 20px;}
+.img-apteki {max-width: 92px;}
 .button_transp {
   border-radius: 15px;
     color: rgba(254,90,75,1);
@@ -142,20 +153,31 @@ h1 {margin-top: 17px;}
 }
 
 /* == =======  9 отзывы врачей =========*/
-.statistic {border-left: solid 5px #00FFFF;}
-.reviews {min-height: 310px; background: url(../img/aculov.png) no-repeat center;
-background-size: contain;}
+
+.akulov {position: absolute;
+  top: 210px;
+    left: 340px;
+    font-size: 11px;
+    color: white;
+    line-height: 18px;}
+.img-akulov {max-width: 380px; display: block;}
+.but5 {position: absolute; right: 256px; top: 160px;}
 
 /* == =======  10 футер =========*/
-.statistic {border-left: solid 5px #00FFFF;}
-.transition {font-size: 13px; background: url(../img/link.png) no-repeat;
-padding-left: 23px;
+
+.transition {font-size: 10px;
+    background: url(../img/link.png) top left no-repeat;
+    padding-left: 23px;
+    height: 20px;
+    margin-bottom: 0px;
 }
-.footer-menu {margin-bottom: 30px;}
+.footer-menu {margin-bottom: 70px;}
 .brand {    font-size: 35px;
     font-weight: 700;}
 .footer {background: url(../img/bg6.png) no-repeat;}
-
+.link-footer {font-size: 11px;}
+.foot-m {margin-bottom: 10px;}
+.logo-footer {font-size: 10px;}
 
  /* ====стили для шариков=====  */
 
@@ -197,7 +219,7 @@ padding-left: 23px;
 .circle_35{top: -79px;left: -55px;}
 .circle_36{top: -62px;left: 726px;}
 .circle_37{top: 186px; right: 360px}
-.circle_38{top: 277px;left: 610px;}
+.circle_38{top: 277px;left: 500px;}
 .circle_39{top: 90px;right: 376px;}
 .circle_40{top: 216px; right: 25px;}
 .circle_41{top: 400px; left: 342px;}
