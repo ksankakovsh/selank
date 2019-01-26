@@ -9,41 +9,65 @@
 
 }
 .img-fluid {margin: 0 auto;}
-.block {padding: 70px 0;}
-.txt {font-weight: 700; font-size: 23px; line-height:1.667; }
-.bold {font-weight: 700; font-size: 14px; line-height: 2;}
+.block {padding: 50px 0;}
+.txt {font-weight: 700; font-size: 16px; line-height:1.8; }
+.bold {font-weight: 700; font-size: 14px; line-height: 1.8;}
 .text_gradient { 
   background: -webkit-linear-gradient(left, rgba(20,213,187,1) 0%, rgba(210,255,82,1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;}
+.textt {font-size: 13px; line-height: 2;}
+.button {
+  background-image: -webkit-linear-gradient( 2deg, rgb(254,105,75) 0%, rgb(254,148,13) 0%, rgb(254,105,75) 99%);
+    background-image: -ms-linear-gradient( 2deg, rgb(254,105,75) 0%, rgb(254,148,13) 0%, rgb(254,105,75) 99%);
+    box-shadow: 0px 1px 6px 0px rgba(247, 84, 111, 0.69);
+    
+    height: 35px;
+    border-radius: 19px;
+    font-size: 11.587px;
+    color: rgb(255, 255, 255);
+    line-height: 1.726;
+    padding: 8px 12px;
+    text-align: center;
+
+}
+.button:hover {background: linear-gradient(to right, rgba(254,90,75,1) 0%, rgba(255,175,75,1) 100%);
+text-decoration: none; color: #FFD700;}
+
 /* == =======  1 блок с менюхой=========*/
-.block_green {background-image: url(../img/good-bg.png); padding: 50px 0;
-background-size: contain; background-repeat: no-repeat; min-height: 330px;
+.block_green {background-image: url(../img/header1.png); padding-bottom: 50px;
+background-size: contain; background-repeat: no-repeat; 
 -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   }
-.block_green2 {
-	background-image: url(../img/bad-bg.png);
-background-size: contain; background-repeat: no-repeat; min-height: 330px;
+.block_green2 {padding-bottom: 50px;
+	background-image: url(../img/header2.png);
+background-size: contain; background-repeat: no-repeat; 
 }
+h1 {margin-top: 17px;}
+.bord {border:none;}
+.but1 {position: absolute;top:273px; left: 45px; }
 .img {margin-top: 50px;}
 .brand-white {font-size: 40px;}
 .ul-head {font-size: 14px; }
 .ul-head li {color: #00FFFF;
-  margin-bottom: 30px; margin-left: 60px; line-height: 2.1;
+  margin-bottom: 30px; margin-left: 12px; line-height: 1.7;
 }
 .ul-blue {color: rgb(71, 71, 71); }
-.textt {font-size: 13px; line-height: 2;}
+
 /* == =======  2 блок с Мясоедовым =========*/
+
 .note  {background-image: url(../img/1.png); background-repeat: no-repeat;padding-left: 91px;
    background-size: contain;}
-.akademik {background: url(../img/myasoed.png) no-repeat center; min-height: 310px; background-size: contain;}
-.button { border-radius: 15px; color: #fff; padding: 5px 25px; position: relative; z-index: 20;
-background: linear-gradient(to right, rgba(255,175,75,1) 0%, rgba(254,90,75,1) 100%);}
-.button:hover {background: linear-gradient(to right, rgba(254,90,75,1) 0%, rgba(255,175,75,1) 100%);
-text-decoration: none; color: #FFD700;}
+.but2 {position: absolute;    bottom: 121px;
+    left: 260px;}
+.white {position: absolute;top: 40px;
+    left: 169px;
+    font-size: 10px;
+    color: white;
+    line-height: 18px;}
 
 /* == =======  3 где пацан на стрессе =========*/
 .bg-2 {background-image: url(../img/bg2.png); background-size: contain;} 
@@ -52,26 +76,37 @@ text-decoration: none; color: #FFD700;}
 /* == =======  4 Создан для тех, 
 кто хочет получать супер-результаты в жизни =========*/
 
-.product {background-image: url(../img/selac.png); min-height: 310px;
-	background-size: contain; background-repeat: no-repeat; margin-bottom: 45px;}
-.where {min-height: 300px;}
+.but3 {position: absolute; bottom: 66px; right: 24px;}
+.txt_where {position: absolute; bottom: 90px; right: 46px;}
+.where:before {
+  content: url(../img/russia.png);
+    position: absolute;
+    left: 325px;
+    bottom: 65px;
+}
+.img-super {max-width: 115px;}
 
 
 /* == =======  5 естественная помощь при стрессе =========*/
 .bg-4 {background-image: url(../img/bg4.png);}
-.help {background-size: contain;
-  min-height: 457px; background: url(../img/video1.png) no-repeat center;
-}
+.but4 {position: absolute; top:125px; left: 120px;}
 
 
 /* == =======  6 эффективность доказана клин.исследованиями =========*/
 .statistic {border-left: solid 5px #00FFFF;}
-.carousel-control-prev-icon {
-background-image: url(../img/arrow1.png);
+.slider1 {margin-bottom: 56px;}
+.slider1 .carousel-control-next {
+      position: absolute;
+    left: 377px;
+    top: 292px;
 }
-.carousel-control-next-icon {
-background-image: url(../img/arrow.png);
+.slider1 .carousel-control-prev {
+  position: absolute;
+    left: 334px;
+    top: 292px;
 }
+
+
 .statistic {border-left: solid 5px #00FFFF;}
 
 /* == =======  7 схема приема =========*/
