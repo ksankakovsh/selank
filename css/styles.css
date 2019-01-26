@@ -47,6 +47,8 @@ background-image: url(../img/tochka.png); background-size: contain;
 
 
 /* == =======  1 блок с менюхой=========*/
+.header {background-image: url(../img/header41.png); 
+  background-size: contain; background-repeat: no-repeat;}
 .block_green {background-image: url(../img/header1.png); padding-bottom: 50px;
 background-size: contain; background-repeat: no-repeat; 
 -webkit-transition: all 0.5s ease-in-out;
@@ -83,7 +85,7 @@ h1 {margin-top: 17px;}
 
 /* == =======  3 где пацан на стрессе =========*/
 .bg-2 {background-image: url(../img/bg2.png); background-size: contain;} 
-
+.boroda-sm {max-height: 375px;}
 
 /* == =======  4 Создан для тех, 
 кто хочет получать супер-результаты в жизни =========*/
@@ -106,6 +108,7 @@ h1 {margin-top: 17px;}
 
 /* == =======  6 эффективность доказана клин.исследованиями =========*/
 .statistic {border-left: solid 5px #00FFFF; max-height: 140px; margin-bottom: 38px;}
+.statistic .text_gradient {font-size: 38px;}
 .slider1 {margin-bottom: 56px;}
 .slider1 .carousel-control-next {
       position: absolute;
@@ -225,12 +228,64 @@ h1 {margin-top: 17px;}
 .circle_41{top: 400px; left: 342px;}
 
 /*===== MEDIA ===*/
+@media only screen and (max-width: 1048px) {
+.myasoed {top: 28px; left: 124px; font-size: 10px; line-height: 15px;} 
+.but2 {bottom: 242px;left: 222px;}
+.slider1 .carousel-control-next {left: 331px; top: 245px;}
+.slider1 .carousel-control-prev {left: 274px; top: 246px;}
+.circle_17, .circle_38, .circle_16 {display: none;}
+.akulov {left: 290px;}
+
+}
+@media only screen and (max-width: 992px) {
+  .block_green {display: none;}
+  .circle_14, .circle_13, .circle_27, .circle_36, .circle_33, .circle_17, 
+  .circle_18, .circle_21, .circle_28 {display: none;}
+  .circle_29 {top: 400px;left: 289px;}
+
+}
+
 @media only screen and (max-width: 768px) {
   .boroda {display: none;}
+  h2 {text-align: center;}
+   
 }
 @media only screen and (max-width: 680px) {
-  .circle_13,.circle_16,.circle_17,.circle_27,.circle_28,.circle_33,
-  .circle_36,.circle_21,.circle_14,.circle_25,.circle_38{
+  .myasoed {
+    top: 54px;
+    left: 177px;
+    font-size: 11px;
+  }
+  .but2 {left: 293px; bottom: 135px;}
+  .slider1 .carousel-control-next {left: 443px; top: 331px;}
+  .slider1 .carousel-control-prev {left: 399px; top: 332px;}
+  .statistic {max-height: 240px;}
+  .button_transp {
+    display: block; margin-bottom: 15px; text-align: center;
+  }
+  .apteki p {text-align: center;}
+  .circle_16,.circle_27,.circle_28,.circle_21,.circle_25,.circle_38{
     display: none;
   }
 }
+@media only screen and (max-width: 480px) {
+  h2 {font-size: 23px;}
+  .but2 {left: 235px; bottom: 95px;}
+  .myasoed {top: 36px;left: 146px;}
+  .img-akulov { max-width: 300px;}
+  .akulov {left: 206px;top: 164px;}
+  .but5 {right: 154px; top: 136px;}
+  .statistic .text_gradient {font-size: 30px;}
+  .circle_29, .circle_30, .circle_32,.circle_20 {display: none;}
+  .slider1 .carousel-control-next {left: 257px; top: 207px;}
+  .slider1 .carousel-control-prev {left: 215px; top: 208px;}
+
+  }
+  @media only screen and (max-width: 380px) {
+    .note {padding-left: 35px;}
+    .myasoed {top: 24px;left: 119px; font-size: 9px;}
+    .but2 {left: 158px; bottom: 54px;}
+    .boroda-sm {max-height: 325px;}
+    .but3 {bottom: 28px;right: 58px;}
+    .txt_where { bottom: 45px; right: 73px;}
+  }
