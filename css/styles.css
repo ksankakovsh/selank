@@ -47,10 +47,75 @@ background-image: url(../img/tochka.png); background-size: contain;
 
 
 /* == =======  1 блок с менюхой=========*/
+/* стили для иконки меню*/
+#menuToggle {
+  overflow: hidden;
+  position: absolute;
+  max-width: 60px;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-radius: 30px;
+  left: 0px;
+  top: 17px;
+}
+
+#menuToggle input {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0; /* hide input */
+  z-index: 1; /* top of the menu */
+}
+
+#menuToggle span{
+  width: 30px;
+  height: 2px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background: #00FFFF;
+  border-radius: 4px;
+  -webkit-transition: all .5s cubic-bezier(.08,.81,.87,.71);
+  -moz-transition: all .5s cubic-bezier(.08,.81,.87,.71);
+  -ms-transition: all .5s cubic-bezier(.08,.81,.87,.71);
+  -o-transition: all .5s cubic-bezier(.08,.81,.87,.71);
+  transition: all .5s cubic-bezier(.08,.81,.87,.71);
+}
+
+#span1 {
+  transform-origin: 4px 0px;
+}
+
+#span3 {
+  transform-origin: bottom right;
+}
+
+#menuToggle input:checked ~ #span1 {
+  background-color: #00FFFF;
+  transform: rotate(45deg) translate(7px);
+}
+#menuToggle input:checked ~ #span2 {
+  background-color: #00FFFF;
+  transform: rotate(495deg) translate(1px);   
+}
+#menuToggle input:checked ~ #span3 {
+  background-color: #00FFFF;
+  transform: rotate(45deg);
+  opacity: 0;
+}
+.header-menu {position: absolute; background: url(../img/bg-green.png) no-repeat; 
+  background-size: cover; max-width: 550px; width: 100%;}
+.navbar-light .navbar-nav .nav-link {color: #fff;}
 .header {background-image: url(../img/header41.png); 
   background-size: contain; background-repeat: no-repeat;}
 .block_green {background-image: url(../img/header1.png); padding-bottom: 50px;
-background-size: contain; background-repeat: no-repeat; 
+background-size: cover; background-repeat: no-repeat; 
 -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
@@ -58,7 +123,7 @@ background-size: contain; background-repeat: no-repeat;
   }
 .block_green2 {padding-bottom: 50px;
 	background-image: url(../img/header2.png);
-background-size: contain; background-repeat: no-repeat; 
+background-size: cover; background-repeat: no-repeat; 
 }
 h1 {margin-top: 17px;}
 .bord {border:none;}
@@ -84,7 +149,7 @@ h1 {margin-top: 17px;}
     line-height: 18px;}
 
 /* == =======  3 где пацан на стрессе =========*/
-.bg-2 {background-image: url(../img/bg2.png); background-size: contain;} 
+.bg-2 {background-image: url(../img/bg2.png); background-size: cover; background-repeat: no-repeat;} 
 .boroda-sm {max-height: 375px;}
 
 /* == =======  4 Создан для тех, 
@@ -102,7 +167,8 @@ h1 {margin-top: 17px;}
 
 
 /* == =======  5 естественная помощь при стрессе =========*/
-.bg-4 {background-image: url(../img/bg4.png); background-size: contain;}
+.bg-3 {background-image: url(../img/bg3.png); background-size: cover; 
+  background-repeat: no-repeat; min-height: 600px; padding-top: 140px;}
 .but4 {position: absolute; top:125px; left: 120px;}
 
 
@@ -118,15 +184,16 @@ h1 {margin-top: 17px;}
 .slider1 .carousel-control-prev {
   position: absolute;
     left: 334px;
-    top: 292px;
+    top: 290px;
 }
 
 /* == =======  7 схема приема =========*/
-.bg-4 {background-image: url(../img/bg4.png); background-size: contain;}
+.bg-4 {background-image: url(../img/bg4.png); background-size: cover; 
+  background-repeat: no-repeat; min-height: 605px; padding-top: 140px;margin-top: -30px; }
 .shema {max-width: 900px; margin: 0 auto;}
 .img-priem {max-width: 80px;}
 /* == =======  8 ближайшая аптека =========*/
-.bg-5 {background: url(../img/bg5.png) no-repeat;}
+.bg-5 {background: url(../img/bg5.png) no-repeat; background-size: cover; min-height: 600px;}
 .apteki {margin-bottom: 20px;}
 .img-apteki {max-width: 92px;}
 .button_transp {
@@ -177,7 +244,8 @@ h1 {margin-top: 17px;}
 .footer-menu {margin-bottom: 70px;}
 .brand {    font-size: 35px;
     font-weight: 700;}
-.footer {background: url(../img/bg6.png) no-repeat;}
+.footer {background: url(../img/bg6.png) no-repeat; background-size: cover;
+padding-top: 140px; min-height: 600px;}
 .link-footer {font-size: 11px;}
 .foot-m {margin-bottom: 10px;}
 .logo-footer {font-size: 10px;}
