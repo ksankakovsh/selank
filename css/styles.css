@@ -8,28 +8,34 @@
   src: url("../fonts/Montserrat-Bold.ttf");
 
 }
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  src: url("../fonts/Montserrat-SemiBold.ttf");
+
+}
+@font-face {
+  font-family: "Montserrat Medium";
+  src: url("../fonts/Montserrat-Medium.ttf");
+
+}
 .img-fluid {margin: 0 auto;}
 .block {padding: 50px 0;}
 .txt {font-weight: 700; font-size: 16px; line-height:1.8; }
-.bold {font-weight: 700; font-size: 14px; line-height: 1.8;}
+.bold {font-family: "Montserrat-SemiBold";  font-size: 18px; line-height: 1.8;}
 .text_gradient { 
   background: -webkit-linear-gradient(left, rgba(20,213,187,1) 0%, rgba(210,255,82,1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;}
-.textt {font-size: 13px; line-height: 2;}
-.button {
-  background-image: -webkit-linear-gradient( 2deg, rgb(254,105,75) 0%, rgb(254,148,13) 0%, rgb(254,105,75) 99%);
-    background-image: -ms-linear-gradient( 2deg, rgb(254,105,75) 0%, rgb(254,148,13) 0%, rgb(254,105,75) 99%);
-    box-shadow: 0px 1px 6px 0px rgba(247, 84, 111, 0.69);
-    
-    height: 35px;
-    border-radius: 19px;
-    font-size: 11.587px;
-    color: rgb(255, 255, 255);
-    line-height: 1.726;
-    padding: 8px 12px;
-    text-align: center;
-
+.textt {font-size: 16px; line-height: 36px;}
+.button-play{font-family: Montserrat;
+font-size: 14px;color: #ffffff;
+font-weight: 500; text-align: center;
+width: 190px; padding-top: 13px;
+height: 50px;
+box-shadow: 1px 1px 6px rgba(247, 84, 111, 0.69);
+border-radius: 25px;
+background-color: #f19e3a;
+background-image: linear-gradient(88deg, #fe940d 0%, #fe694b 99%, #fe694b 100%);
 }
 .button:hover {background: linear-gradient(to right, rgba(254,90,75,1) 0%, rgba(255,175,75,1) 100%);
 text-decoration: none; color: #FFD700;}
@@ -47,6 +53,7 @@ background-image: url(../img/tochka.png); background-size: contain;
 
 
 /* == =======  1 блок с менюхой=========*/
+
 /* стили для иконки меню*/
 #menuToggle {
   overflow: hidden;
@@ -112,8 +119,7 @@ background-image: url(../img/tochka.png); background-size: contain;
 .header-menu {position: absolute; background: url(../img/bg-green.png) no-repeat; 
   background-size: cover; max-width: 550px; width: 100%;}
 .navbar-light .navbar-nav .nav-link {color: #fff;}
-.header {background-image: url(../img/header41.png); 
-  background-size: contain; background-repeat: no-repeat;}
+.header {}
 .block_green {background-image: url(../img/header1.png); padding-bottom: 50px;
 background-size: cover; background-repeat: no-repeat; 
 -webkit-transition: all 0.5s ease-in-out;
@@ -125,20 +131,21 @@ background-size: cover; background-repeat: no-repeat;
 	background-image: url(../img/header2.png);
 background-size: cover; background-repeat: no-repeat; 
 }
+
 h1 {margin-top: 17px;}
-.bord {border:none;}
-.but1 {position: absolute;top:273px; left: 45px; }
-.img {margin-top: 50px;}
+
+.but1 {position: absolute;top:240px; left: 20px; }
+.img-product{max-width: 380px; width: 100%;}
 .brand-white {font-size: 40px;}
-.ul-head {font-size: 14px; }
+.ul-head {font-size: 18px; }
 .ul-head li {color: #00FFFF;
-  margin-bottom: 30px; margin-left: 12px; line-height: 1.7;
+  margin-bottom: 30px; margin-left: 12px; line-height: 32px;
 }
 .ul-blue {color: rgb(71, 71, 71); }
 
 /* == =======  2 блок с Мясоедовым =========*/
 
-.note  {background-image: url(../img/1.png); background-repeat: no-repeat;padding-left: 91px;
+.note  {background-image: url(../img/1.png); background-repeat: no-repeat;padding-left: 40px;
    background-size: contain;}
 .but2 {position: absolute;    bottom: 121px;
     left: 260px;}
@@ -155,13 +162,24 @@ h1 {margin-top: 17px;}
 /* == =======  4 Создан для тех, 
 кто хочет получать супер-результаты в жизни =========*/
 
-.but3 {position: absolute; bottom: 66px; right: 24px;}
-.txt_where {position: absolute; bottom: 90px; right: 46px;}
+.but3 {position: absolute; bottom: 34px; right: 24px;}
+.txt_where {position: absolute; bottom: 70px; right: 30px;font-family: "Montserrat-SemiBold";
+font-size: 24px;}
 .where:before {
   content: url(../img/russia.png);
     position: absolute;
     left: 325px;
     bottom: 65px;
+}
+.button-where { max-width: 270px; width: 100%;color: #474747;
+font-family: Montserrat;border-radius: 25px;height: 50px;
+font-size: 14px; text-align: center; padding-top: 10px;
+font-weight: 500;box-shadow: 1px 1px 6px rgba(247, 84, 111, 0.69);
+border: 2px solid #fe6c47;
+}
+.button-where:hover { color: #fff;
+background-color: #f19e3a;
+background-image: linear-gradient(-92deg, #fe940d 0%, #fe694b 99%, #fe694b 100%);
 }
 .img-super {max-width: 115px;}
 
@@ -169,22 +187,22 @@ h1 {margin-top: 17px;}
 /* == =======  5 естественная помощь при стрессе =========*/
 .bg-3 {background-image: url(../img/bg3.png); background-size: cover; 
   background-repeat: no-repeat; min-height: 600px; padding-top: 140px;}
-.but4 {position: absolute; top:125px; left: 120px;}
-
+.but4 {position: absolute; top:195px; left: 155px;}
+.img-vid {max-width: 500px; width: 100%;}
 
 /* == =======  6 эффективность доказана клин.исследованиями =========*/
-.statistic {border-left: solid 5px #00FFFF; max-height: 140px; margin-bottom: 38px;}
+.statistic {border-left: solid 5px #00FFFF; max-height: 185px; margin-bottom: 38px;}
 .statistic .text_gradient {font-size: 38px;}
-.slider1 {margin-bottom: 56px;}
+.slider1 {margin-bottom: 65px;}
 .slider1 .carousel-control-next {
       position: absolute;
-    left: 377px;
-    top: 292px;
+    left: 455px;
+    top: 335px;
 }
 .slider1 .carousel-control-prev {
   position: absolute;
-    left: 334px;
-    top: 290px;
+    left: 405px;
+    top: 335px;
 }
 
 /* == =======  7 схема приема =========*/
@@ -224,14 +242,21 @@ h1 {margin-top: 17px;}
 
 /* == =======  9 отзывы врачей =========*/
 
-.akulov {position: absolute;
-  top: 210px;
-    left: 340px;
-    font-size: 11px;
+.akulov {    position: absolute;
+    top: 311px; text-align: center;
+    left: 362px;
+    font-size: 16px;
     color: white;
-    line-height: 18px;}
-.img-akulov {max-width: 380px; display: block;}
-.but5 {position: absolute; right: 256px; top: 160px;}
+    line-height: 25px;}
+.img-akulov {max-width: 600px; width: 100%; display: block;}
+.but5 {position: absolute; right: 233px; top: 230px;}
+.slider2 .carousel-control-next {
+      position: absolute; right: -110px;
+}
+.slider2 .carousel-control-prev {
+  position: absolute;
+    left: -75px;
+}
 
 /* == =======  10 футер =========*/
 
@@ -241,14 +266,27 @@ h1 {margin-top: 17px;}
     height: 20px;
     margin-bottom: 0px;
 }
-.footer-menu {margin-bottom: 70px;}
+.footer-menu {margin-bottom: 85px;
+width: 217px;
+height: 253px;
+color: #fe8b1a;
+font-family: Montserrat;
+font-size: 14px;
+font-weight: 500;
+line-height: 48px;
+text-transform: uppercase;}
 .brand {    font-size: 35px;
     font-weight: 700;}
 .footer {background: url(../img/bg6.png) no-repeat; background-size: cover;
 padding-top: 140px; min-height: 600px;}
-.link-footer {font-size: 11px;}
-.foot-m {margin-bottom: 10px;}
+.link-footer {font-size: 14px;}
+
 .logo-footer {font-size: 10px;}
+.form-poll {}
+.text-poll {font-family: "Montserrat Medium";
+font-weight: 500;
+line-height: 30px;}
+
 
  /* ====стили для шариков=====  */
 
@@ -268,8 +306,8 @@ padding-top: 140px; min-height: 600px;}
 .circle_13{top: 106px; left: 445px;}
 .circle_14{ left: 380px;}
 .circle_15{top: 358px; left: 270px;}
-.circle_16{ left: 590px;}
-.circle_17{top: 10px; left: 620px;}
+.circle_16{ left: 556px;}
+.circle_17{top: 10px; left: 500px;}
 .circle_18{right: 428px;}
 .circle_19{top: 50px;right: 640px;}
 .circle_23{top: 389px;left: -117px;}
@@ -307,16 +345,87 @@ padding-top: 140px; min-height: 600px;}
 }
 @media only screen and (max-width: 992px) {
   .block_green {display: none;}
+  .header-menu {position: relative;margin-bottom: 30px;}
+  .but2 {bottom: 167px;left: 338px;}
+  .myasoed {top: 63px;left: 214px;font-size: 15px;line-height: 22px;}
+  .img-vid {display: block;}
+  .slider1 .carousel-control-prev {
+        left: 488px;
+    top: 385px;
+}
+.slider1 .carousel-control-next {
+    left: 542px;
+    top: 384px;
+}
+  .but4{left: 240px;}
+  .bg-4 {padding-top: 95px;}
+  .button_transp {
+    display: block; margin-bottom: 15px; text-align: center;
+  }
+  .slider2 .carousel-control-next {
+    right: 0px;
+}
+  .but5 {
+    right: 304px;
+    top: 245px;
+}
+.akulov {
+    left: 467px;
+    top: 342px;
+    font-size: 15px;
+}
   .circle_14, .circle_13, .circle_27, .circle_36, .circle_33, .circle_17, 
   .circle_18, .circle_21, .circle_28 {display: none;}
   .circle_29 {top: 400px;left: 289px;}
 
 }
+@media only screen and (max-width: 920px) {
 
+}
 @media only screen and (max-width: 768px) {
   .boroda {display: none;}
   h2 {text-align: center;}
-   
+
+  .myasoed {
+    top: 44px;
+    left: 171px;
+    font-size: 13px;
+    line-height: 19px;
+}
+.but2 {
+    bottom: 135px;
+    left: 289px;
+}
+.slider1 .carousel-control-prev {
+    left: 385px;
+    top: 330px;
+}
+.slider1 .carousel-control-next {
+    left: 440px;
+    top: 329px;
+}
+.statistic {
+    max-height: 185px;}
+.but4 {
+    left: 184px;
+}
+   .akulov {
+    left: 360px;
+    top: 300px;
+    font-size: 15px;
+}
+
+.but5 {
+    right: 218px;
+    top: 211px;
+}
+.button_transp {
+      display: block;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+
 }
 @media only screen and (max-width: 680px) {
   .myasoed {
@@ -328,9 +437,7 @@ padding-top: 140px; min-height: 600px;}
   .slider1 .carousel-control-next {left: 443px; top: 331px;}
   .slider1 .carousel-control-prev {left: 399px; top: 332px;}
   .statistic {max-height: 240px;}
-  .button_transp {
-    display: block; margin-bottom: 15px; text-align: center;
-  }
+  
   .apteki p {text-align: center;}
   .circle_16,.circle_27,.circle_28,.circle_21,.circle_25,.circle_38{
     display: none;
@@ -338,22 +445,55 @@ padding-top: 140px; min-height: 600px;}
 }
 @media only screen and (max-width: 480px) {
   h2 {font-size: 23px;}
-  .but2 {left: 235px; bottom: 95px;}
+  .but2 {left: 194px; bottom: 72px;}
   .myasoed {top: 36px;left: 146px;}
   .img-akulov { max-width: 300px;}
-  .akulov {left: 206px;top: 164px;}
-  .but5 {right: 154px; top: 136px;}
+  .akulov {left: 249px;top: 164px;}
+  .but4 {top: 137px;left: 120px;}
+  .but5 {right: 150px;top: 88px;}
   .statistic .text_gradient {font-size: 30px;}
   .circle_29, .circle_30, .circle_32,.circle_20 {display: none;}
-  .slider1 .carousel-control-next {left: 257px; top: 207px;}
-  .slider1 .carousel-control-prev {left: 215px; top: 208px;}
+  .slider1 .carousel-control-next {left: 313px; top: 267px;}
+  .slider1 .carousel-control-prev {left: 267px; top: 267px;}
+  .where:before {left: 157px;}
 
   }
   @media only screen and (max-width: 380px) {
+    .textt {line-height: 27px;}
+    h1 {font-size: 39px;}
+    .myasoed {
+    top: 24px;
+    left: 112px;
+    font-size: 9px;
+    line-height: 15px;
+}
+.but2 {
+    left: 122px;
+    bottom: 0px;
+}
     .note {padding-left: 35px;}
-    .myasoed {top: 24px;left: 119px; font-size: 9px;}
+   
     .but2 {left: 158px; bottom: 54px;}
     .boroda-sm {max-height: 325px;}
     .but3 {bottom: 28px;right: 58px;}
     .txt_where { bottom: 45px; right: 73px;}
+.img-product {margin-bottom: 130px;}
+.but3 {bottom: 13px;}
+.where:before {left: 106px;}
+.slider1 .carousel-control-prev {
+    left: 215px;
+    top: 250px;
+}
+.slider1 .carousel-control-next {
+    left: 258px;
+    top: 249px;
+}
+.akulov {
+    left: 226px;
+    top: 163px;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+
   }
