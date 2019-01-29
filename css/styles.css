@@ -182,7 +182,18 @@ font-family: Montserrat;
 font-size: 15px;
 font-weight: 500;text-transform:uppercase;
 line-height: 26px;}
-.komu1, .komu2, .komu3, .komu4, .komu5, .komu6 {
+.boroda-sm {max-width: 762px; width: 100%;}
+.komu-sm {background: #fff; border-radius: 25px;}
+.komu-txt-sm {
+  margin-top: 12px;
+
+color: #3c3c3c;
+font-family: Montserrat;
+font-size: 19px;
+font-weight: 700;text-transform:uppercase;
+line-height: 26px;}
+
+.komu-selank {
 max-width: 329px; width: 100%; margin-bottom: 120px;
 height: 69px; position: absolute;
 border-radius: 35px;
@@ -193,7 +204,6 @@ background-color: #ffffff;}
 .komu4{right:120px;top: 40px;}
 .komu5{right:55px;top: 200px;}
 .komu6 {right:110px;top: 390px;}
-.boroda-sm {max-width: 762px; width: 100%;}
 
 /* == =======  4 Создан для тех, 
 кто хочет получать супер-результаты в жизни =========*/
@@ -231,16 +241,17 @@ background-image: linear-gradient(-92deg, #fe940d 0%, #fe694b 99%, #fe694b 100%)
 .statistic .text_gradient {font-size: 38px;}
 .slider1 {margin-bottom: 65px;}
 .slider1 .carousel-control-next {
-      position: absolute;
+      position: absolute;opacity: 1;
     left: 455px;
     top: 335px;
 }
 .slider1 .carousel-control-prev {
-  position: absolute;
+  position: absolute;opacity: 1;
     left: 405px;
-    top: 335px;
+    top: 336px;
 }
-
+.slider1 .carousel-control-prev:hover {opacity: 0.5;}
+.slider1 .carousel-control-next:hover {opacity: 0.5;}
 /* == =======  7 схема приема =========*/
 .bg-4 {background-image: url(../img/bg4.png); background-size: cover; 
   background-repeat: no-repeat; min-height: 605px; padding-top: 140px;margin-top: -30px; }
@@ -286,14 +297,15 @@ background-image: linear-gradient(-92deg, #fe940d 0%, #fe694b 99%, #fe694b 100%)
     line-height: 25px;}
 .img-akulov {max-width: 600px; width: 100%; display: block;}
 .but5 {position: absolute; right: 233px; top: 230px;}
-.slider2 .carousel-control-next {
+.slider2 .carousel-control-next { opacity: 1;
       position: absolute; right: -110px;
 }
 .slider2 .carousel-control-prev {
-  position: absolute;
+  position: absolute; opacity: 1;
     left: -75px;
 }
-
+.slider2 .carousel-control-prev:hover {opacity: 0.5;}
+.slider2 .carousel-control-next:hover {opacity: 0.5;}
 /* == =======  10 футер =========*/
 
 .transition {font-size: 10px;
@@ -369,8 +381,47 @@ line-height: 30px;}
 .circle_40{top: 216px; right: 25px;}
 .circle_41{top: 400px; left: 342px;}
 
+
 /*===== MEDIA ===*/
+
+@media only screen and (max-width: 1199px) {
+  .header-menu {padding-left: 80px;}
+  #menuToggle {left: 67px;}
+  .circle_16 {
+    left: 420px;
+}
+.circle_17 {
+    top: -52px;
+    left: 362px;
+}
+.myasoed {
+    top: 23px;
+    left: 131px;}
+    .akulov {
+    top: 258px;
+    left: 294px;}
+.circle_38 {
+    left: 386px;}    
+.circle_13 {display: none;}
+.komu1 {left: 97px;}
+.komu3 {top: 346px;}
+.komu6 {top: 349px;}
+.komu-txt {font-size: 13px;line-height: 22px;}
+.komu4 {right: 98px;}    
+.statistic .textt {line-height: 28px;}
+.statistic {max-height: 210px;}
+.slider1 .carousel-control-prev {left: 338px;
+    top: 300px;}
+ .slider1 .carousel-control-next   {left: 394px;
+    top: 299px;}
+
+}
+
+
 @media only screen and (max-width: 1048px) {
+.header-menu {padding-left: 0px;}
+#menuToggle {left: 0px;}
+
 .myasoed {top: 28px; left: 124px; font-size: 10px; line-height: 15px;} 
 .but2 {bottom: 242px;left: 222px;}
 .slider1 .carousel-control-next {left: 331px; top: 245px;}
@@ -384,7 +435,7 @@ line-height: 30px;}
   .header-menu {position: relative;margin-bottom: 30px;}
   .but2 {bottom: 167px;left: 338px;}
   .myasoed {top: 63px;left: 214px;font-size: 15px;line-height: 22px;}
-  .komu
+  .komu {display: none;}
   .img-vid {display: block;}
   .slider1 .carousel-control-prev {
         left: 488px;
@@ -427,41 +478,24 @@ line-height: 30px;}
     top: 44px;
     left: 217px;
     font-size: 13px;
-    line-height: 19px;
-}
-.but2 {
-    bottom: 135px;
-    left: 289px;
-}
-.slider1 .carousel-control-prev {
-    left: 385px;
-    top: 330px;
-}
-.slider1 .carousel-control-next {
-    left: 440px;
-    top: 329px;
-}
-.statistic {
-    max-height: 185px;}
-.but4 {
-    left: 184px;
-}
-   .akulov {
-    left: 360px;
+    line-height: 19px;}
+.but2 {bottom: 135px; left: 289px;}
+.slider1 .carousel-control-prev {left: 385px;top: 330px;}
+.slider1 .carousel-control-next {left: 440px;top: 329px;}
+.statistic {max-height: 185px;}
+.but4 {left: 184px;}
+   .akulov {left: 360px;
     top: 300px;
-    font-size: 15px;
-}
+    font-size: 15px;}
 
-.but5 {
-    right: 218px;
-    top: 211px;
-}
-.button_transp {
-      display: block;
+.but5 {right: 218px;
+    top: 211px;}
+.button_transp {display: block;
     text-align: center;
     margin: 0 auto;
-    margin-bottom: 15px;
-}
+    margin-bottom: 15px;}
+
+
 
 
 }
@@ -530,7 +564,7 @@ line-height: 30px;}
     left: 5px;
 }
 .akulov {
-    left: 226px;
+    left: 233px;
     top: 163px;
     font-size: 10px;
     font-weight: 700;
