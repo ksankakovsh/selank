@@ -37,8 +37,8 @@ border-radius: 25px;
 background-color: #f19e3a;
 background-image: linear-gradient(88deg, #fe940d 0%, #fe694b 99%, #fe694b 100%);
 }
-.button:hover {background: linear-gradient(to right, rgba(254,90,75,1) 0%, rgba(255,175,75,1) 100%);
-text-decoration: none; color: #FFD700;}
+.button-play:hover {background: linear-gradient(to right, rgba(254,90,75,1) 0%, rgba(255,175,75,1) 100%);
+text-decoration: none; color: #FFF;}
 .carousel-indicators {
   bottom: -40px;
 }
@@ -139,7 +139,7 @@ background-size: cover; background-repeat: no-repeat;
   transition: all 0.5s ease-in-out;
   }
 .block_green2 {padding-bottom: 50px;
-	background-image: url(../img/header2.png);
+  background-image: url(../img/header2.png);
 background-size: cover; background-repeat: no-repeat; 
 }
 
@@ -266,6 +266,7 @@ background-image: linear-gradient(-92deg, #fe940d 0%, #fe694b 99%, #fe694b 100%)
 /* == =======  6 эффективность доказана клин.исследованиями =========*/
 .statistic {border-left: solid 5px #00FFFF; max-height: 185px; margin-bottom: 38px;}
 .statistic .text_gradient {font-size: 38px;}
+.slider1 {width: 100%;}
 .slider1 {margin-bottom: 65px;}
 .slider1 .carousel-control-next {
       position: absolute;opacity: 1;
@@ -294,7 +295,6 @@ background-image: linear-gradient(-92deg, #fe940d 0%, #fe694b 99%, #fe694b 100%)
     padding: 5px 25px;
     position: relative;
     z-index: 20;
-    /* background: linear-gradient(to right, rgba(255,175,75,1) 0%, rgba(254,90,75,1) 100%); */
     border-image: linear-gradient(to right, rgba(255,175,75,1) 0%, rgba(254,90,75,1) 100%);
     border: solid 1px;
 }
@@ -305,15 +305,10 @@ background-image: linear-gradient(-92deg, #fe940d 0%, #fe694b 99%, #fe694b 100%)
 .button_transp:active {
   background: rgba(254,90,75,1); color: #fff;
 }
-.links {  background: linear-gradient(to right, rgba(255,175,75,1) 0%, rgba(254,90,75,1) 100%);
-      font-size: 14px;
-  -webkit-background-clip: text; 
-  -webkit-text-fill-color: transparent;}
-.links:hover {text-decoration: underline;background: linear-gradient(to right, rgba(254,90,75,1) 0%, rgba(255,175,75,1) 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+.links {  color: #FA8072}
+.links:hover {text-decoration: underline;
 }
-.hidden {display: none;}
+.slider1_ie {display: none;}
 /* == =======  9 отзывы врачей =========*/
 
 .akulov {    position: absolute;
@@ -324,6 +319,7 @@ background-image: linear-gradient(-92deg, #fe940d 0%, #fe694b 99%, #fe694b 100%)
     line-height: 25px;}
 .img-akulov {max-width: 600px; width: 100%; display: block;}
 .but5 {position: absolute; right: 233px; top: 230px;}
+.slider2 {width: 100%;}
 .slider2 .carousel-control-next { opacity: 1;
       position: absolute; right: -110px;
 }
@@ -357,7 +353,7 @@ padding-top: 140px; min-height: 600px;}
 .link-footer {font-size: 14px;}
 
 .logo-footer {font-size: 10px;}
-.form-poll {}
+
 .text-poll {font-family: "Montserrat Medium";
 font-weight: 500;
 line-height: 30px;}
